@@ -1,0 +1,87 @@
+threat_model:
+  - id: "TM-001"
+    description: "Example: Attacker spoofs user identity by stealing JWT token"
+    stride_category:
+      - "Spoofing"
+    assets_affected:
+      - "User Session"
+      - "JWT Token"
+    attack_vector: "XSS vulnerability on login page allows attacker to capture token from LocalStorage"
+    mitre_attack:
+      - tactic: "TA0006 - Credential Access"
+        techniques:
+          - "T1528 - Steal Application Access Token"
+      - tactic: "TA0001 - Initial Access"
+        techniques:
+          - "T1190 - Exploit Public-Facing Application"
+    mitigations:
+      existing:
+        - "HTTPS only cookies (partial, as token still accessible via JS if not HttpOnly)"
+      recommended:
+        - "Implement HttpOnly and Secure flags for session cookies"
+        - "Store JWT in server-side session or backend-for-frontend (BFF) managed cookie"
+        - "Short-lived JWTs with refresh tokens"
+    likelihood: "Medium"
+    impact: "High"
+    risk_level: "High" # Calculated or qualitatively assessed
+    priority: "High"
+    status: "Open"
+    assignee: "Security Team"
+    notes: "Investigate feasibility of BFF for token management."
+    references:
+      - "OWASP A07 - Identification and Authentication Failures"
+      - "OWASP A02 - Cryptographic Failures"
+
+  - id: "TM-002"
+    description: "Example: SQL Injection allows data exfiltration from customer database"
+    stride_category:
+      - "Tampering"
+      - "Information Disclosure"
+    assets_affected:
+      - "Customer Database"
+      - "Sensitive User Data"
+    attack_vector: "Unsanitized user input in API search parameter"
+    mitre_attack:
+      - tactic: "TA0002 - Execution"
+        techniques:
+          - "T1059 - Command and Scripting Interpreter (via SQL)"
+      - tactic: "TA0009 - Collection"
+        techniques:
+          - "T1005 - Data from Local System (if DB on same system)"
+    mitigations:
+      existing:
+        - "Basic input length validation"
+      recommended:
+        - "Implement parameterized queries/ORM"
+        - "Input validation using allow-lists"
+        - "Web Application Firewall (WAF) with SQLi detection rules"
+    likelihood: "High"
+    impact: "High"
+    risk_level: "Critical"
+    priority: "High"
+    status: "Open"
+    assignee: "Dev Team"
+    notes: "Review all API endpoints handling user input."
+    references:
+      - "OWASP A03 - Injection"
+
+# Notes on fields:
+# id: Unique identifier for the threat.
+# description: A clear, concise description of the threat.
+# stride_category: List of applicable STRIDE categories (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).
+# assets_affected: List of assets that could be compromised or affected by this threat.
+# attack_vector: How an attacker could exploit this threat.
+# mitre_attack:
+#   tactic: MITRE ATT&CK Tactic ID and name.
+#   techniques: List of MITRE ATT&CK Technique IDs and names relevant to this threat under the specified tactic.
+# mitigations:
+#   existing: Current controls légende in place.
+#   recommended: Proposed controls or improvements.
+# likelihood: Estimated likelihood of the threat occurring (e.g., Low, Medium, High, Critical).
+# impact: Estimated impact if the threat is realized (e.g., Low, Medium, High, Critical).
+# risk_level: Overall risk assessment (can be calculated from likelihood and impact).
+# priority: Priority for addressing this threat (e.g., Low, Medium, High).
+# status: Current status of the threat (e.g., Open, In Progress, Mitigated, Accepted).
+# assignee: Team or individual responsible for addressing the threat.
+# notes: Additional comments or context.
+# references: Links to relevant standards, guidelines, or documentation (e.g., OWASP, CAPEC).
