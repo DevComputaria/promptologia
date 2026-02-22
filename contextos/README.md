@@ -4,6 +4,7 @@ Nesta câmara, guardamos as essências que dão sabor e direção às nossas int
 
 ## 📁 Categorias
 
+*   **[SpecKit](./speckit/)**: Nossa metodologia de especificações estruturadas (Context Engineering pura).
 *   **[DevComputaria](./devcomputaria/)**: O "tom de voz" e a filosofia da nossa comunidade.
 *   **[Projetos](./projetos/)**: Contextos específicos para projetos internos ou open-source.
 *   **[Tecnologias](./tecnologias/)**: Resumos e "cheat sheets" de stacks tecnológicas para injetar no prompt.
