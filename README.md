@@ -18,6 +18,14 @@ Abaixo, os portais para as diferentes câmaras do conhecimento:
 
 *   **[Manifesto da Promptologia](./contextos/devcomputaria/manifesto.md)**: Nossa filosofia (ligeiramente desesperada).
 *   **[RFC-001: Diretrizes Caóticas](./arcano/rfc/rfc-001-diretrizes-caoticas.md)**: As regras não escritas que acabamos de escrever.
+*   **[RFC-002: Registro e Versionamento](./arcano/rfc/rfc-002-registro-e-versionamento.md)**: Identidade estável, status explícito e menos arquivos `_final_agora_vai`.
+
+## 🔗 Fronteira com DevComputaria.Prompting
+
+- Este repositório guarda fichas, feitiços em Markdown, skills e exemplos para leitura e adaptação humana.
+- Contratos executáveis e versionados por semver vivem em [`DevComputaria.Prompting`](https://github.com/DevComputaria/DevComputaria.Prompting).
+- Um feitiço só recebe `prompt_id` depois de existir lá com versão fixa; nunca use aliases como `latest`.
+- Não copie a árvore `prompts/` para este grimório nem edite aqui uma versão publicada.
 
 ## 🤝 Contribuindo
 

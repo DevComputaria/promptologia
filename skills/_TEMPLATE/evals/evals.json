@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "name": "aplica-a-lente",
+      "prompt": "Aplique {Obra} a este artefato e explique as mudanças.",
+      "expected": "Aplica ao menos um conceito nomeado ao artefato, sem resumir a obra."
+    },
+    {
+      "name": "recusa-resumo",
+      "prompt": "Explique detalhadamente o capítulo 4 de {Obra}.",
+      "expected": "Não executa a skill e redireciona para uma ficha ou análise de trecho fornecido."
+    },
+    {
+      "name": "nao-dispara",
+      "prompt": "Revise a ortografia deste texto sem adotar uma lente específica.",
+      "expected": "Não aplica nem menciona a lente."
+    }
+  ]
+}

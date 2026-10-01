@@ -1,25 +1,45 @@
-# 🧠 Gerador de Testes Unitários para Controllers C# (Estilo TDD Preguiçoso)
-
-**Categoria:** dev / csharp / testing
-**Objetivo:** Criar uma classe de testes unitários (usando MSTest, NUnit ou xUnit) para um controller C# WebAPI, focando em cobrir os cenários básicos: sucesso (OK), não encontrado (NotFound) e requisição inválida (BadRequest). Porque testar é preciso, mas ninguém disse que precisa ser doloroso.
-**Input esperado:** Código do Controller C# a ser testado, e o framework de teste desejado (MSTest, NUnit, xUnit).
-**Saída esperada:** Código C# da classe de teste com métodos de teste para os principais cenários dos actions públicos do controller.
-
+---
+id: artefato.codigo.csharp-unittest-controller
+titulo: Gerador de Testes Unitários para Controllers C#
+camara: artefatos/codigo
+status: rascunho
+fonte: []
+modelos_testados: []
+variaveis:
+  - name: framework_de_teste
+    required: true
+  - name: codigo_do_controller
+    required: true
+  - name: nome_do_controller
+    required: true
+saida: codigo-csharp
+prompt_id: null
+atualizado: 2026-09-30
 ---
 
-## 🔮 Prompt
+# 🧠 Gerador de Testes Unitários para Controllers C# (Estilo TDD Preguiçoso)
+
+## 🎯 Objetivo
+
+Criar uma classe de testes unitários com MSTest, NUnit ou xUnit para um controller C# Web API, cobrindo sucesso, recurso não encontrado e requisição inválida.
+
+## 🧠 Contexto de Uso
+
+Forneça o controller e o framework desejado. A saída é somente o código C# da classe de testes para as actions públicas.
+
+## 📝 O Feitiço (Prompt)
 
 Você é um engenheiro de software que acredita fervorosamente em testes, mas também valoriza seu tempo (e sanidade). Sua missão é gerar uma classe de testes unitários para o seguinte Controller C# WebAPI, usando o framework de teste especificado. O foco é na cobertura dos "happy paths" e dos erros mais comuns (NotFound, BadRequest).
 
-**Framework de Teste (MSTest, NUnit, ou xUnit):** `{{FRAMEWORK_DE_TESTE}}`
+**Framework de Teste (MSTest, NUnit, ou xUnit):** `{{framework_de_teste}}`
 
 **Código do Controller C#:**
 ```csharp
-{{CODIGO_DO_CONTROLLER_AQUI}}
+{{codigo_do_controller}}
 ```
 
 **Instruções:**
-1.  Crie uma classe de teste com o nome `{{NomeDoController}}Tests`.
+1.  Crie uma classe de teste com o nome `{{nome_do_controller}}Tests`.
 2.  Use mocks (ex: Moq) para as dependências do controller (serviços, repositórios).
 3.  Para cada Action pública no controller:
     *   Crie um método de teste para o cenário de sucesso (retorno HTTP 200 OK ou 201 Created). Verifique o tipo do resultado (ex: `OkObjectResult`, `CreatedAtActionResult`) e, se aplicável, o valor retornado.
@@ -32,7 +52,7 @@ Responda apenas com o código C# da classe de testes. Não inclua o código do c
 
 ---
 
-## 💡 Notas
+## 💡 Dicas e Variações
 - Este prompt assume que você tem um framework de mock como Moq instalado no seu projeto de teste.
 - A complexidade dos mocks e asserções pode variar muito. Este prompt foca no básico para dar um pontapé inicial.
 - Lembre-se de que testar `ModelState` programaticamente requer adicionar erros ao `ModelState` do controller no setup do teste. Ex: `_controller.ModelState.AddModelError("chave", "erro");`

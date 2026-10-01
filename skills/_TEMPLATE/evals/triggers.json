@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "Aplique os conceitos de {Obra} a este código.",
+    "Revise este PRD pela lente de {Autor}."
+  ],
+  "should_not_trigger": [
+    "Faça um resumo de {Obra}.",
+    "Revise este texto sem uma lente específica."
+  ]
+}
