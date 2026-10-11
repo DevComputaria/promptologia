@@ -1,3 +1,5 @@
+> **Importado.** Atalho de pesquisa, ainda fora do template da casa. Fonte não identificada; o texto não deve ser tratado como feitiço original.
+
 # Substituí toda a minha pesquisa manual no Google por esses 10 prompts do Perplexity
 
 Perplexity é uma potência em pesquisa quando você sabe como usar os prompts corretamente. Isso é um jogo completamente diferente de pesquisar coisas manualmente no Google. Ele entrega ótimos resumos de tópicos em poucas páginas com uma longa lista de fontes, gráficos e visualizações de dados que são melhores do que a maioria dos outros LLMs não oferecem.

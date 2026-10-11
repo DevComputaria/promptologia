@@ -1,3 +1,23 @@
+---
+id: "copilot-instructions"
+titulo: "Gerador de copilot-instructions"
+camara: "arquivos-de-contexto/sistema"
+categoria: "harness"
+objetivo: "Prompt de terceiros que pede para gerar .github/copilot-instructions.md. Não é um AGENTS.md da casa. Corpo preservado."
+entrada: ["repositório aberto no editor"]
+saida: "markdown"
+placeholders: []
+modelos_testados: []
+versao: "0.0.0"
+status: "imported"
+risco: "nenhum"
+proveniencia: "importado"
+fonte: "https://code.visualstudio.com/docs/copilot/customization/custom-instructions"
+substitui: ""
+---
+
+> **Importado.** Corpo preservado, sem adaptação. Fonte: https://code.visualstudio.com/docs/copilot/customization/custom-instructions
+
 Analyze this codebase to generate or update .github/copilot-instructions.md for guiding AI coding agents.
 
 Focus on discovering the essential knowledge that would help an AI agents be immediately productive in this codebase. Consider aspects like:

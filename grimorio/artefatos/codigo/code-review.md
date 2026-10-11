@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 id: artefato.codigo.code-review
 titulo: Code Review Empático e Técnico
 camara: artefatos/codigo
@@ -15,6 +16,32 @@ variaveis:
 saida: markdown-secao-4
 prompt_id: null
 atualizado: 2026-09-30
+=======
+id: "code-review"
+titulo: "Code review empático e técnico"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Revisar um trecho com pontos positivos, atenção, sugestões e mensagem de PR."
+entrada: ["código", "descrição do PR"]
+saida: "markdown"
+placeholders: ["{{DESCRICAO_DO_PR_AQUI}}", "{{LANGUAGE}}", "{{TRECHO_DE_CODIGO_AQUI}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
+# 🧠 Code Review Empático e Técnico
+
+**Categoria:** dev
+**Objetivo:** Revisar um trecho de código explicando possíveis falhas, sugestões de melhoria e pontos positivos – com uma abordagem equilibrada entre crítica técnica e empatia emocional.
+**Input esperado:** Um trecho de código (qualquer linguagem comum) e contexto do PR.
+**Saída esperada:** Revisão dividida em: Pontos Positivos, Pontos de Atenção, Sugestões de Melhoria e uma Mensagem Final (como se fosse um comentário no PR).
+
+>>>>>>> origin/main
 ---
 
 # 🧠 Code Review Empático e Técnico

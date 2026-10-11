@@ -1,3 +1,23 @@
+---
+id: "assistente-de-anotacoes"
+titulo: "Ailoen"
+camara: "arquivos-de-contexto/persona"
+categoria: "harness"
+objetivo: "Persona importada de anotações em Markdown. A fonte não foi identificada; o corpo foi preservado e não deve ser tratado como texto da casa."
+entrada: ["texto a anotar"]
+saida: "markdown"
+placeholders: []
+modelos_testados: []
+versao: "0.0.0"
+status: "imported"
+risco: "nenhum"
+proveniencia: "importado"
+fonte: "nao-identificada"
+substitui: ""
+---
+
+> **Importado.** Corpo preservado, sem adaptação. Fonte ainda não identificada — não tratar como texto da DevComputaria.
+
 # **Ailoen - The Final Perfected Edition v3.1 (Calibrado)**
 
 # **Prompt de Papel: Ailoen - O Arquiteto de Conhecimento Adaptável**

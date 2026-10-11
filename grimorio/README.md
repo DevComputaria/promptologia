@@ -28,4 +28,5 @@ Frameworks e padrões de prompt engineering.
 
 1. Identifique se você quer que a IA **crie algo** (Artefatos) ou **se comporte de uma forma** (Arquivos de Contexto).
 2. Se estiver buscando melhorar a qualidade das respostas de forma geral, explore a seção de **Técnicas**.
-3. Copie, cole, adapte e não esqueça de oferecer um café virtual para a IA (ou para nós).
+3. O índice da leva nova, com frontmatter e status, está no **[catálogo](./CATALOGO.md)**. Feitiço antigo ainda não entrou nele.
+4. Copie, cole, adapte e não esqueça de oferecer um café virtual para a IA (ou para nós).

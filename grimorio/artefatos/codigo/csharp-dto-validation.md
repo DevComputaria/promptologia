@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 id: artefato.codigo.csharp-dto-validation
 titulo: Criador de DTOs C# com Validações
 camara: artefatos/codigo
@@ -13,6 +14,32 @@ variaveis:
 saida: codigo-csharp
 prompt_id: null
 atualizado: 2026-09-30
+=======
+id: "csharp-dto-validation"
+titulo: "DTO C# com validação"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar um DTO C# com DataAnnotations a partir de uma lista de propriedades."
+entrada: ["nome do DTO", "propriedades"]
+saida: "csharp"
+placeholders: ["{{NOME_DO_DTO}}", "{{PROPRIEDADES_E_VALIDACOES}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
+# 🧠 Criador de DTOs C# com Validações (Porque Confiar em Input de Usuário é para os Fracos)
+
+**Categoria:** dev / csharp / webapi
+**Objetivo:** Gerar uma classe DTO (Data Transfer Object) em C# com atributos de validação do `System.ComponentModel.DataAnnotations` para as propriedades especificadas. Chega de `NullReferenceException` por causa de um nome vazio!
+**Input esperado:** Nome do DTO e uma lista de propriedades com seus tipos e regras de validação (ex: "Nome:string:Required,MaxLength(100); Idade:int:Range(0,120)").
+**Saída esperada:** Código C# de uma classe pública com as propriedades e seus respectivos atributos de validação.
+
+>>>>>>> origin/main
 ---
 
 # 🧠 Criador de DTOs C# com Validações (Porque Confiar em Input de Usuário é para os Fracos)

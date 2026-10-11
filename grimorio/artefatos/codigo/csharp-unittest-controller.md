@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 id: artefato.codigo.csharp-unittest-controller
 titulo: Gerador de Testes Unitários para Controllers C#
 camara: artefatos/codigo
@@ -15,6 +16,32 @@ variaveis:
 saida: codigo-csharp
 prompt_id: null
 atualizado: 2026-09-30
+=======
+id: "csharp-unittest-controller"
+titulo: "Testes de controller C#"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar testes de controller para sucesso, NotFound e BadRequest."
+entrada: ["código do controller", "framework"]
+saida: "csharp"
+placeholders: ["{{CODIGO_DO_CONTROLLER_AQUI}}", "{{FRAMEWORK_DE_TESTE}}", "{{NomeDoController}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
+# 🧠 Gerador de Testes Unitários para Controllers C# (Estilo TDD Preguiçoso)
+
+**Categoria:** dev / csharp / testing
+**Objetivo:** Criar uma classe de testes unitários (usando MSTest, NUnit ou xUnit) para um controller C# WebAPI, focando em cobrir os cenários básicos: sucesso (OK), não encontrado (NotFound) e requisição inválida (BadRequest). Porque testar é preciso, mas ninguém disse que precisa ser doloroso.
+**Input esperado:** Código do Controller C# a ser testado, e o framework de teste desejado (MSTest, NUnit, xUnit).
+**Saída esperada:** Código C# da classe de teste com métodos de teste para os principais cenários dos actions públicos do controller.
+
+>>>>>>> origin/main
 ---
 
 # 🧠 Gerador de Testes Unitários para Controllers C# (Estilo TDD Preguiçoso)

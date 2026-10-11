@@ -5,5 +5,5 @@ Prompts que preparam o terreno, definindo personas, limites e regras de atuaçã
 ## 📂 Categorias
 
 - **[Persona](./persona/)**: "Vista a máscara de...". Prompts de identidade.
-- **[Sistema](./sistema/)**: Instruções de sistema (System Prompts) para segurança, revisão e conformidade.
-- **[Regras de Negócio](./regras-de-negocio/)**: Contextos profundos sobre domínios específicos.
+- **[Sistema](./sistema/)**: Instruções de sistema. Inclui o harness de `AGENTS.md` e, em `sistema/secops/`, a avaliação defensiva de injeção. O material antigo continua em `sistema/secops-legacy/`.
+- **[Regras de Negócio](./regras-de-negocio/)**: Contextos de domínio para injetar antes da tarefa. O de Pix não traz artigo nem prazo de memória.

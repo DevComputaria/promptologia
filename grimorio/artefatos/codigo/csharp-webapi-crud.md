@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 id: artefato.codigo.csharp-webapi-crud
 titulo: Gerador de Endpoints CRUD C# WebAPI
 camara: artefatos/codigo
@@ -13,6 +14,32 @@ variaveis:
 saida: codigo-csharp
 prompt_id: null
 atualizado: 2026-09-30
+=======
+id: "csharp-webapi-crud"
+titulo: "Controller CRUD C#"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar um controller CRUD assíncrono para uma entidade."
+entrada: ["nome da entidade", "serviço opcional"]
+saida: "csharp"
+placeholders: ["{{NOME_DA_ENTIDADE}}", "{{NOME_DO_SERVICO_OPCIONAL}}", "{{NomeDaEntidadeEmMinusculo}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
+# 🧠 Gerador de Endpoints CRUD C# WebAPI (Com Cheiro de Café Fresco)
+
+**Categoria:** dev / csharp / webapi
+**Objetivo:** Gerar o esqueleto de um controller C# WebAPI com endpoints CRUD (Create, Read, Update, Delete) para uma entidade específica, incluindo o básico de injeção de dependência e async/await, porque ninguém merece código blocante em 2024.
+**Input esperado:** Nome da entidade (ex: "Produto", "Usuario"), e opcionalmente, o nome do serviço/repositório a ser injetado (ex: "IProdutoService").
+**Saída esperada:** Código C# de um controller com os métodos GET (todos e por ID), POST, PUT e DELETE, utilizando `IActionResult` ou `ActionResult<T>` e chamadas assíncronas.
+
+>>>>>>> origin/main
 ---
 
 # 🧠 Gerador de Endpoints CRUD C# WebAPI (Com Cheiro de Café Fresco)

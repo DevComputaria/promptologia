@@ -1,3 +1,21 @@
+---
+id: "base-prompt-template"
+titulo: "Template base de prompt"
+camara: "tecnicas"
+categoria: "harness"
+objetivo: "Modelo genérico de seção para um feitiço novo. O exemplo interno é de observabilidade."
+entrada: ["stacktrace de exemplo"]
+saida: "markdown"
+placeholders: ["{{STACKTRACE_HERE}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 ```markdown
 # 🧠 Título do Prompt
 
