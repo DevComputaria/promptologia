@@ -13,31 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 GRIMORIO = ROOT / "grimorio"
 INDEX = GRIMORIO / "INDEX.md"
-VALID_STATUSES = {"rascunho", "testado", "ponte", "arquivado"}
-
-# Dívida explícita para permitir a migração por câmara. Remova uma entrada assim
-# que o arquivo receber frontmatter; qualquer feitiço novo fica sujeito ao registro.
-LEGACY_FILES = {
-    "grimorio/arquivos-de-contexto/persona/assistente-de-anotacoes.md",
-    "grimorio/arquivos-de-contexto/sistema/copilot-instructions.md",
-    "grimorio/arquivos-de-contexto/sistema/marm-system.md",
-    "grimorio/arquivos-de-contexto/sistema/secops-legacy/cicd-security-assessment.md",
-    "grimorio/arquivos-de-contexto/sistema/secops-legacy/pentest-generation.md",
-    "grimorio/arquivos-de-contexto/sistema/secops-legacy/threat-modeling.md",
-    "grimorio/artefatos/criativo/ave-maria-do-galho-amaldicoado.md",
-    "grimorio/artefatos/criativo/gpt-terapeuta.md",
-    "grimorio/artefatos/criativo/standup-daily.md",
-    "grimorio/artefatos/dados-e-scripts/observabilidade.md",
-    "grimorio/artefatos/dados-e-scripts/workflow-n8n.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/MVP /Guided-MVP.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/MVP-Concept /Guided-MVP-Concept-Definition.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/PRD /Guided-PRD-Creation.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/Testing /Guided-Test-Plan.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/UX-User-Flow /Guided-UX-User-Flow.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/Ultra-Lean-MVP /Guided-Ultra-Lean-MVP.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/v0-Design /v0.dev-visual-generation-prompt-filler.md",
-    "grimorio/tecnicas/templates-para-projetos/ai-product-development-toolkit/v0-Design /v0.dev-visual-generation-prompt.md",
-}
+VALID_STATUSES = {"draft", "battle-tested", "imported", "superseded"}
 
 
 @dataclass(frozen=True)
@@ -51,7 +27,7 @@ def spell_files() -> list[Path]:
     files: list[Path] = []
     for path in GRIMORIO.rglob("*.md"):
         relative = path.relative_to(GRIMORIO)
-        if path.name in {"README.md", "INDEX.md"}:
+        if path.name in {"README.md", "INDEX.md", "CATALOGO.md"}:
             continue
         if "templates" in relative.parts or "examples" in relative.parts:
             continue
@@ -119,21 +95,15 @@ def entries() -> list[Entry]:
 def validate(items: list[Entry]) -> list[str]:
     errors: list[str] = []
     ids: dict[str, Path] = {}
-    discovered = {entry.path.relative_to(ROOT).as_posix() for entry in items}
-    for missing in sorted(LEGACY_FILES - discovered):
-        errors.append(f"{missing}: exceção legada não aponta para um feitiço existente")
     for entry in items:
         relative = entry.path.relative_to(ROOT).as_posix()
-        registered = relative not in LEGACY_FILES
         spell_id = entry.metadata.get("id")
         status = entry.metadata.get("status")
 
-        if registered and not spell_id:
+        if not spell_id:
             errors.append(f"{relative}: feitiço sem id")
-        if registered and not status:
+        if not status:
             errors.append(f"{relative}: feitiço sem status")
-        if not registered and spell_id and status:
-            errors.append(f"{relative}: remova o feitiço já registrado de LEGACY_FILES")
         if status and status not in VALID_STATUSES:
             errors.append(f"{relative}: status inválido: {status}")
         if spell_id:
@@ -149,7 +119,7 @@ def markdown(items: list[Entry]) -> str:
         "# Índice do Grimório",
         "",
         "Este arquivo é gerado por `python3 scripts/index-grimorio.py`. Edite o frontmatter dos feitiços, não a tabela.",
-        "Arquivos ainda não migrados aparecem como `rascunho (legado)` até receberem `id` e `status`.",
+        "Todos os feitiços listados têm frontmatter validado; a rubrica de status segue a RFC-002.",
         "",
         "| Feitiço | Caminho | Câmara | Status | Modelos testados |",
         "|---|---|---|---|---|",
@@ -162,7 +132,7 @@ def markdown(items: list[Entry]) -> str:
         models = entry.metadata.get("modelos_testados")
         model_text = ", ".join(str(model) for model in models) if isinstance(models, list) and models else "—"
         lines.append(f"| {entry.title} | [`{relative.as_posix()}`]({href}) | `{chamber}` | `{status}` | {model_text} |")
-    lines.extend(["", "## Legenda", "", "- `rascunho`: ainda sem evidência de execução.", "- `testado`: possui modelo identificado e exemplo reproduzível.", "- `ponte`: aponta para uma versão fixa em `DevComputaria.Prompting`.", "- `arquivado`: preservado para histórico.", "- `rascunho (legado)`: aguarda migração de frontmatter; não equivale a evidência de teste.", ""])
+    lines.extend(["", "## Legenda", "", "- `draft`: ainda sem evidência de execução.", "- `battle-tested`: possui saída real registrada em `exemplos/responses/`.", "- `imported`: veio de uma fonte externa identificada.", "- `superseded`: substituído por outro feitiço.", ""])
     return "\n".join(lines)
 
 

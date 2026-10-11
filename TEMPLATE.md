@@ -1,21 +1,4 @@
 ---
-<<<<<<< HEAD
-id: artefato.categoria.slug-do-feitico
-titulo: Título Claro e Impactante
-camara: artefatos/categoria
-status: rascunho
-fonte: []
-modelos_testados: []
-variaveis:
-  - name: exemplo
-    required: true
-saida: markdown
-prompt_id: null
-atualizado: AAAA-MM-DD
----
-
-# Nome do Feitiço: [Título Claro e Impactante]
-=======
 id: exemplo-nao-copiar-este-arquivo
 titulo: Título claro
 camara: artefatos/codigo
@@ -31,8 +14,8 @@ risco: nenhum
 proveniencia: original
 fonte: ""
 substitui: ""
+prompt_id: null
 ---
->>>>>>> origin/main
 
 # Nome do Feitiço
 
@@ -59,12 +42,6 @@ Se a entrada obrigatória vier vazia, responda com uma linha de recusa e pare.
 
 ## Exemplo
 
-<<<<<<< HEAD
-Status aceitos: `rascunho`, `testado`, `ponte` e `arquivado`. Preencha `prompt_id` somente depois da promoção para uma versão fixa no repositório `DevComputaria.Prompting`.
-
----
-*Parte do Grimório Arcano da DevComputaria.*
-=======
 Entrada mínima sintética e a saída que conta como acerto. Dado real de cliente não entra.
 
 ## Rubrica de aceitação
@@ -81,4 +58,5 @@ Como este tipo de pedido costuma quebrar, e o que fazer com a saída quando queb
 
 `status` só vira `battle-tested` com arquivo não vazio em `exemplos/responses/<id>.md`.
 `risco: uso-dual` exige escopo autorizado no corpo do feitiço, não numa nota depois do bloco.
->>>>>>> origin/main
+
+`prompt_id` só é preenchido após a promoção para uma versão fixa em `DevComputaria.Prompting`.

@@ -1,20 +1,4 @@
 ---
-<<<<<<< HEAD
-id: artefato.codigo.csharp-dto-validation
-titulo: Criador de DTOs C# com Validações
-camara: artefatos/codigo
-status: rascunho
-fonte: []
-modelos_testados: []
-variaveis:
-  - name: nome_do_dto
-    required: true
-  - name: propriedades_e_validacoes
-    required: true
-saida: codigo-csharp
-prompt_id: null
-atualizado: 2026-09-30
-=======
 id: "csharp-dto-validation"
 titulo: "DTO C# com validação"
 camara: "artefatos/codigo"
@@ -39,27 +23,16 @@ substitui: ""
 **Input esperado:** Nome do DTO e uma lista de propriedades com seus tipos e regras de validação (ex: "Nome:string:Required,MaxLength(100); Idade:int:Range(0,120)").
 **Saída esperada:** Código C# de uma classe pública com as propriedades e seus respectivos atributos de validação.
 
->>>>>>> origin/main
 ---
 
-# 🧠 Criador de DTOs C# com Validações (Porque Confiar em Input de Usuário é para os Fracos)
-
-## 🎯 Objetivo
-
-Gerar uma classe DTO em C# com atributos de validação de `System.ComponentModel.DataAnnotations` para as propriedades especificadas.
-
-## 🧠 Contexto de Uso
-
-Use ao iniciar contratos de entrada de uma Web API. Informe o nome do DTO e propriedades com tipos e regras de validação. A saída é somente o código C# da classe pública.
-
-## 📝 O Feitiço (Prompt)
+## 🔮 Prompt
 
 Você é um programador C# meticuloso e um pouco paranoico, especialmente quando se trata de dados vindos do mundo exterior. Sua tarefa é criar uma classe DTO (Data Transfer Object) com validações robustas usando DataAnnotations.
 
-**Nome do DTO:** `{{nome_do_dto}}`
+**Nome do DTO:** `{{NOME_DO_DTO}}`
 
 **Propriedades e Validações (formato: `NomeProp:TipoProp:Validacao1(param),Validacao2; NomeProp2:TipoProp2...`):**
-`{{propriedades_e_validacoes}}`
+`{{PROPRIEDADES_E_VALIDACOES}}`
 
 **Exemplo de Propriedades e Validações:**
 `Descricao:string:Required,StringLength(255, MinimumLength=3); Preco:decimal:Required,Range(0.01, 9999.99); DataValidade:DateTime?:; CategoriaId:int:Required`
@@ -77,7 +50,7 @@ Responda apenas com o código C# da classe DTO. Que os deuses da tipagem forte n
 
 ---
 
-## 💡 Dicas e Variações
+## 💡 Notas
 - Este prompt foca em DataAnnotations. Para validações mais complexas, considere FluentValidation (mas isso é outra história e outro prompt).
 - Muito útil para garantir que os dados que chegam na sua API não são um completo lixo.
 - Lembre-se que `?` após o tipo (ex: `int?`, `DateTime?`) torna a propriedade anulável, o que geralmente significa que `[Required]` não fará sentido a menos que você queira exigir que o valor seja explicitamente `null` (o que seria estranho). Pense bem nas suas validações!
