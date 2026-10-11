@@ -1,3 +1,21 @@
+---
+id: "observabilidade-incident-template"
+titulo: "Template de incidente de observabilidade"
+camara: "tecnicas"
+categoria: "devops"
+objetivo: "Duplicata de observabilidade.md. A fase 4 troca este corpo por um ponteiro; não foi apagada nesta PR."
+entrada: ["stacktrace ou relato"]
+saida: "markdown"
+placeholders: ["{{DESCRICAO_OU_STACKTRACE}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 ```markdown
 # 🧠 Investigação de Incidente de Observabilidade
 

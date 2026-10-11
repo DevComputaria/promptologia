@@ -1,3 +1,21 @@
+---
+id: "observabilidade"
+titulo: "Consultor de observabilidade"
+camara: "artefatos/dados-e-scripts"
+categoria: "devops"
+objetivo: "Sugerir métrica, log e trace para um incidente Kubernetes."
+entrada: ["descrição do incidente"]
+saida: "markdown"
+placeholders: []
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 Consultor de Observabilidade para Incidentes Kubernetes
 
 **Categoria:** devops

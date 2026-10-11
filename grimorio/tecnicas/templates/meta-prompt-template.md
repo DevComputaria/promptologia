@@ -1,3 +1,21 @@
+---
+id: "meta-prompt-template"
+titulo: "Meta-prompt"
+camara: "tecnicas"
+categoria: "harness"
+objetivo: "Checklist para construir um prompt antes de escrevê-lo."
+entrada: ["objetivo", "público", "formato"]
+saida: "markdown"
+placeholders: ["{{CATEGORIA_DO_SEU_PROMPT}}", "{{CONTEXTO_ADICIONAL}}", "{{CONTEXTO_ADICIONAL_AQUI_SE_NECESSARIO}}", "{{DADOS_AQUI}}", "{{DESCRICAO_DO_FORMATO_DA_RESPOSTA_OU_EXEMPLO_DE_FORMATO}}", "{{DETALHES_DO_INPUT}}", "{{DETALHES_DO_OUTPUT_ESPERADO}}", "{{EXEMPLO_INPUT_1}}", "{{EXEMPLO_INPUT_2}}", "{{EXEMPLO_OUTPUT_1}}", "{{EXEMPLO_OUTPUT_2}}", "{{INPUT_ESPERADO_RESUMIDO}}", "{{INSTRUCAO_1}}", "{{INSTRUCAO_1_DO_SEU_PROMPT}}", "{{INSTRUCAO_2}}", "{{INSTRUCAO_2_DO_SEU_PROMPT}}", "{{NOME_DA_VARIAVEL}}", "{{NOTA_1_PARA_USUARIOS_DO_SEU_PROMPT}}", "{{NOTA_2_PARA_USUARIOS_DO_SEU_PROMPT}}", "{{OBJETIVO_DO_SEU_PROMPT}}", "{{OBJETIVO_DO_SEU_PROMPT_RESUMIDO}}", "{{OUTPUT_ESPERADO_RESUMIDO}}", "{{PERSONA_DA_IA}}", "{{PERSONA_DA_IA_AQUI}}", "{{PLACEHOLDER_1}}", "{{PLACEHOLDER_2}}", "{{PLACEHOLDER_PARA_INPUT_PRINCIPAL_DO_USUARIO}}", "{{PUBLICO_ALVO_DA_RESPOSTA}}", "{{REGRAS_E_RESTRICOES}}", "{{RESTRICAO_1}}", "{{RESTRICAO_2}}", "{{SECAO_DE_EXEMPLOS_FEW_SHOT_SE_APLICAVEL}}", "{{SUB_INSTRUCAO_A_SE_HOUVER}}", "{{TITULO_DO_SEU_PROMPT}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 #  META-PROMPT: Seu Guia para Construir Prompts Que (Geralmente) Funcionam
 
 Este é um **meta-prompt**, um prompt sobre como criar prompts. Use-o como um checklist ou um guia de reflexão para construir seus próprios prompts eficazes, especialmente ao interagir com LLMs avançados como os da família GPT. Lembre-se, a clareza e a especificidade são suas melhores amigas (depois do café, claro).

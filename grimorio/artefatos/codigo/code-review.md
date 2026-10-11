@@ -1,3 +1,21 @@
+---
+id: "code-review"
+titulo: "Code review empático e técnico"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Revisar um trecho com pontos positivos, atenção, sugestões e mensagem de PR."
+entrada: ["código", "descrição do PR"]
+saida: "markdown"
+placeholders: ["{{DESCRICAO_DO_PR_AQUI}}", "{{LANGUAGE}}", "{{TRECHO_DE_CODIGO_AQUI}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 Code Review Empático e Técnico
 
 **Categoria:** dev

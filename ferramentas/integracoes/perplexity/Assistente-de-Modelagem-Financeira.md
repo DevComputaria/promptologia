@@ -1,3 +1,23 @@
+---
+id: "perplexity-assistente-de-modelagem-financeira"
+titulo: "Assistente de Modelagem Financeira"
+camara: "ferramentas/perplexity"
+categoria: "pesquisa"
+objetivo: "Atalho de pesquisa para Perplexity. Importado, sem exemplo de saída e sem o contrato de recusa da casa."
+entrada: ["pedido livre"]
+saida: "markdown"
+placeholders: []
+modelos_testados: []
+versao: "0.0.0"
+status: "imported"
+risco: "nenhum"
+proveniencia: "importado"
+fonte: "nao-identificada"
+substitui: ""
+---
+
+> **Importado.** Atalho de pesquisa, ainda fora do template da casa. Fonte não identificada; o texto não deve ser tratado como feitiço original.
+
 ```
 Crie uma análise financeira comparativa para [Empresas/Período]:
 

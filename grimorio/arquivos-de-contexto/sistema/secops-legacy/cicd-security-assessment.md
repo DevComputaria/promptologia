@@ -1,3 +1,21 @@
+---
+id: "cicd-security-assessment"
+titulo: "Avaliação de segurança de CI/CD"
+camara: "arquivos-de-contexto/sistema"
+categoria: "secops"
+objetivo: "Avaliar a segurança de um pipeline a partir da descrição colada."
+entrada: ["descrição do pipeline"]
+saida: "markdown"
+placeholders: ["{{DESCRICAO_PIPELINE_AQUI}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "uso-dual"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # ⚙️ CI/CD Pipeline Security Assessment com LLM
 
 **Categoria:** secops

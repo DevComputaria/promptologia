@@ -1,3 +1,21 @@
+---
+id: "csharp-unittest-controller"
+titulo: "Testes de controller C#"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar testes de controller para sucesso, NotFound e BadRequest."
+entrada: ["código do controller", "framework"]
+saida: "csharp"
+placeholders: ["{{CODIGO_DO_CONTROLLER_AQUI}}", "{{FRAMEWORK_DE_TESTE}}", "{{NomeDoController}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 Gerador de Testes Unitários para Controllers C# (Estilo TDD Preguiçoso)
 
 **Categoria:** dev / csharp / testing

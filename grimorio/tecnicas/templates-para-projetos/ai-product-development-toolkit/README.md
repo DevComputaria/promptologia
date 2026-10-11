@@ -1,3 +1,5 @@
+> **Importado.** Corpo preservado, sem adaptação ao contrato da casa. Fonte: https://github.com/TechNomadCode/AI-Product-Development-Toolkit
+
 As I use different AI tools I often find myself designing specific prompts to get desired outputs. This repository is my way of:
 
 *   **Organizing:** Keeping track of prompts that work well.

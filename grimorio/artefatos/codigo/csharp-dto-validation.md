@@ -1,3 +1,21 @@
+---
+id: "csharp-dto-validation"
+titulo: "DTO C# com validação"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar um DTO C# com DataAnnotations a partir de uma lista de propriedades."
+entrada: ["nome do DTO", "propriedades"]
+saida: "csharp"
+placeholders: ["{{NOME_DO_DTO}}", "{{PROPRIEDADES_E_VALIDACOES}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 Criador de DTOs C# com Validações (Porque Confiar em Input de Usuário é para os Fracos)
 
 **Categoria:** dev / csharp / webapi
