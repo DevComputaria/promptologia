@@ -1,3 +1,21 @@
+---
+id: "gpt-terapeuta"
+titulo: "GPT terapeuta para devs"
+camara: "artefatos/criativo"
+categoria: "humor"
+objetivo: "Responder a um desabafo de dev com empatia curta e uma piada de TI."
+entrada: ["desabafo"]
+saida: "markdown"
+placeholders: ["{{DESABAFO_DO_USUARIO}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 GPT Terapeuta para Devs Estressados
 
 **Categoria:** humor

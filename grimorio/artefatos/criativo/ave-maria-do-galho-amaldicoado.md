@@ -1,3 +1,20 @@
+---
+id: "ave-maria-do-galho-amaldicoado"
+titulo: "Ave-maria do galho amaldiçoado"
+camara: "artefatos/criativo"
+categoria: "humor"
+objetivo: "Interromper uma linha de raciocínio travada e voltar aos fundamentos. Texto legado da casa, sem placeholder."
+entrada: ["conversa travada"]
+saida: "markdown"
+placeholders: []
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
 
 Se alguém puder me ajudar a testar isso, eu agradeceria. Foi feito para sair de uma conversa ou ramificação de código destrutiva ou improdutiva. A ideia é que seja genérico e utilizável tanto para conversas normais quanto para desenvolvimento.
 

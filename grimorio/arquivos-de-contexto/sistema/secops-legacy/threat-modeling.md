@@ -1,3 +1,21 @@
+---
+id: "threat-modeling"
+titulo: "Threat modeling"
+camara: "arquivos-de-contexto/sistema"
+categoria: "secops"
+objetivo: "Gerar um threat model preliminar com STRIDE a partir de um cenário."
+entrada: ["cenário técnico"]
+saida: "markdown"
+placeholders: ["{{CENARIO_AQUI}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "uso-dual"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🛡️ Threat Modeling Automatizado com LLM
 
 **Categoria:** secops

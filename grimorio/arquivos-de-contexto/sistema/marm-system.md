@@ -1,3 +1,23 @@
+---
+id: "marm-system"
+titulo: "MARM v1.5"
+camara: "arquivos-de-contexto/sistema"
+categoria: "harness"
+objetivo: "Protocolo de memória importado. Corpo preservado. A versão no upstream avançou; este arquivo é o texto v1.5 que cita HANDBOOK.md, ausente neste repositório."
+entrada: ["comandos do protocolo"]
+saida: "texto"
+placeholders: []
+modelos_testados: []
+versao: "0.0.0"
+status: "imported"
+risco: "nenhum"
+proveniencia: "importado"
+fonte: "https://github.com/Lyellr88/marm-memory"
+substitui: ""
+---
+
+> **Importado.** Corpo preservado, sem adaptação. Fonte: https://github.com/Lyellr88/marm-memory
+
 
 MEMORY ACCURATE RESPONSE MODE v1.5 (MARM)
 

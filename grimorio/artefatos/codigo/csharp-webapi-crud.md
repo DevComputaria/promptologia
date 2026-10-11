@@ -1,3 +1,21 @@
+---
+id: "csharp-webapi-crud"
+titulo: "Controller CRUD C#"
+camara: "artefatos/codigo"
+categoria: "dev"
+objetivo: "Gerar um controller CRUD assíncrono para uma entidade."
+entrada: ["nome da entidade", "serviço opcional"]
+saida: "csharp"
+placeholders: ["{{NOME_DA_ENTIDADE}}", "{{NOME_DO_SERVICO_OPCIONAL}}", "{{NomeDaEntidadeEmMinusculo}}"]
+modelos_testados: []
+versao: "0.1.0"
+status: "draft"
+risco: "nenhum"
+proveniencia: "original"
+fonte: ""
+substitui: ""
+---
+
 # 🧠 Gerador de Endpoints CRUD C# WebAPI (Com Cheiro de Café Fresco)
 
 **Categoria:** dev / csharp / webapi

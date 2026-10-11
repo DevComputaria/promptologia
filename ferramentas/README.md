@@ -4,7 +4,7 @@ Prompts sozinhos são legais, mas automatizá-los e integrá-los ao seu workflow
 
 ## 📁 O que temos aqui?
 
-*   **[CLI](./cli/)**: Scripts de terminal para buscar e gerenciar seus prompts.
+*   **[CLI](./cli/)**: O checker do contrato (`check_grimorio.py`). Ainda não busca feitiço por texto; o índice é o catálogo.
 *   **[Integrações](./integracoes/)**: Configurações e modelos para usar com outras ferramentas.
     *   **[n8n](../grimorio/artefatos/dados-e-scripts/workflow-n8n.md)**: Automação de fluxos complexos.
     *   **[Perplexity](./perplexity/)**: Alavancando a busca em tempo real com prompts estruturados.
