@@ -10,3 +10,4 @@ Aqui jaz o conhecimento que exige mais de 3 neurônios funcionando simultaneamen
 ## 📜 Documentos Atuais
 
 *   **[RFC-001: Diretrizes Caóticas da Promptologia](./rfc/rfc-001-diretrizes-caoticas.md)**
+*   **[RFC-002: O Contrato do Feitiço](./rfc/rfc-002-contrato-do-feitico.md)**
