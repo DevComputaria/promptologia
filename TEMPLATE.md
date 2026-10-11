@@ -14,6 +14,7 @@ risco: nenhum
 proveniencia: original
 fonte: ""
 substitui: ""
+prompt_id: null
 ---
 
 # Nome do Feitiço
@@ -57,3 +58,5 @@ Como este tipo de pedido costuma quebrar, e o que fazer com a saída quando queb
 
 `status` só vira `battle-tested` com arquivo não vazio em `exemplos/responses/<id>.md`.
 `risco: uso-dual` exige escopo autorizado no corpo do feitiço, não numa nota depois do bloco.
+
+`prompt_id` só é preenchido após a promoção para uma versão fixa em `DevComputaria.Prompting`.

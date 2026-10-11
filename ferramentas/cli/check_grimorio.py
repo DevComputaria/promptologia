@@ -112,7 +112,7 @@ def spell_files() -> list[Path]:
             continue
         for path in sorted(base.rglob("*.md")):
             rel = path.relative_to(ROOT).as_posix()
-            if path.name == "README.md":
+            if path.name in {"README.md", "INDEX.md"}:
                 continue
             if rel == "grimorio/CATALOGO.md":
                 continue

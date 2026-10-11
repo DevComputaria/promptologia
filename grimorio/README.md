@@ -2,6 +2,8 @@
 
 Bem-vindo ao coração da Promptologia. Este diretório contém os "feitiços" propriamente ditos — prompts cuidadosamente (ou desesperadamente) elaborados para diversas finalidades.
 
+Comece pelo **[Índice do Grimório](./INDEX.md)** para ver caminho, câmara, status e modelos testados de cada feitiço.
+
 ## 📁 Estrutura da Biblioteca
 
 ### 1. [Artefatos](./artefatos/README.md)
