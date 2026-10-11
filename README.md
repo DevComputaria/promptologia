@@ -18,6 +18,7 @@ Abaixo, os portais para as diferentes câmaras do conhecimento:
 
 *   **[Manifesto da Promptologia](./contextos/devcomputaria/manifesto.md)**: Nossa filosofia (ligeiramente desesperada).
 *   **[RFC-001: Diretrizes Caóticas](./arcano/rfc/rfc-001-diretrizes-caoticas.md)**: As regras não escritas que acabamos de escrever.
+*   **[RFC-002: O Contrato do Feitiço](./arcano/rfc/rfc-002-contrato-do-feitico.md)**: O que a RFC-001 deixou como sugestão e o checker passou a exigir.
 *   **[Plano de mudanças](./PLANO-DE-MUDANCAS.md)**: Reforma do contrato, higiene de path e os feitiços novos (ainda `draft`).
 *   **[Catálogo da leva nova](./grimorio/CATALOGO.md)**: Índice do que entrou com frontmatter. O resto do grimório ainda não foi migrado.
 
